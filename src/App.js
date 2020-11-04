@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet";
 
-import './App.css';
 import { Fragment } from "react";
+
+import { Header } from './components/Header'
 
 function App() {
   const { title } = window.setup
@@ -11,11 +12,7 @@ function App() {
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <div className="App">
-        <header className="App-header">
-          {title}
-        </header>
-      </div>
+      <Header title={title} />
     </Fragment>
   );
 }

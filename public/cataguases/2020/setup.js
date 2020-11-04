@@ -1,3 +1,3 @@
 window.setup = {
-  title: 'Eleições 2020 - Cataguases'
+  title: 'Candidatos a Prefeito em Cataguases - MG'
 }
