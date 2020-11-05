@@ -8,10 +8,16 @@ import { Fragment, useState } from "react";
 import { Header } from './components/Header'
 import { CandidateList } from './components/CandidateList'
 import { CandidateDetails } from './components/CandidateDetails'
+import { generateAssetURI } from './utils';
+
+const { title, candidates } = window.setup
+
+const builtCandidates = candidates.map((candidate) => ({
+  ...candidate,
+  img: generateAssetURI(candidate.img)
+}))
 
 function App() {
-  const { title, candidates } = window.setup
-
   const [selectedCandidate, selectCandidate] = useState(null)
 
   return (
@@ -23,7 +29,7 @@ function App() {
       <div className='App-Body'>
         {selectedCandidate
           ? <CandidateDetails handleBack={() => selectCandidate(null)} candidate={selectedCandidate} />
-          : <CandidateList candidates={candidates} handleCandidateSelection={selectCandidate} />
+          : <CandidateList candidates={builtCandidates} handleCandidateSelection={selectCandidate} />
         }
       </div>
     </Fragment>

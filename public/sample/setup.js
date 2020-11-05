@@ -3,8 +3,11 @@ window.setup = {
   candidates: [
     {
       name: 'Fulano de tal 1',
+      fullName: 'Fulano de tal 1',
+      description: 'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
       party: 'FOO',
       number: '12.000',
+      vice: 'Ciclano de tal 1',
       img: 'avatar.jpeg',
       currentOcupation: 'Administrator',
       gender: 'Masculino',
@@ -14,8 +17,11 @@ window.setup = {
     },
     {
       name: 'Fulano de tal 2',
+      fullName: 'Fulano de tal 2',
+      description: 'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
       party: 'BAR',
       number: '130',
+      vice: 'Ciclano de tal 2',
       img: 'avatar.jpeg',
       currentOcupation: 'Faxineira',
       gender: 'Feminino',
@@ -25,8 +31,11 @@ window.setup = {
     },
     {
       name: 'Fulano de tal 3',
+      fullName: 'Fulano de tal 3',
+      description: 'Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
       party: 'ZOO',
       number: '999999',
+      vice: 'Ciclano de tal 3',
       img: 'avatar.jpeg',
       currentOcupation: 'Eletricista',
       gender: 'Masculino',

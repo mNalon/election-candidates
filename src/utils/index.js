@@ -1,0 +1,1 @@
+export { generateAssetURI } from './generateAssetURI'
