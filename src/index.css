@@ -15,3 +15,7 @@ code {
 .vertical-gap-5 {
   margin-bottom: 15px;
 }  
+
+.img-avatar {
+  max-width: 100px;
+}

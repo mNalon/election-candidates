@@ -7,7 +7,7 @@ const CandidateCard = ({ candidate }) => {
 
   return (
     <Card className="text-center Candidate-Card">
-      <Card.Img className='Candidate-Avatar' src={ img } />
+      <Card.Img className='img-avatar' src={ img } />
       <Card.Body>
         <Card.Title>{ name }</Card.Title>
         <Card.Text>

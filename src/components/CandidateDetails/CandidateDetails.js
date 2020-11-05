@@ -72,7 +72,7 @@ const CandidateDetails = ({ candidate, handleBack }) => {
       <div className='vertical-gap-5'>
         <Media>
           <img
-            className="mr-3"
+            className="mr-3 img-avatar"
             src={img}
             alt={`Foto ${name}`}
           />

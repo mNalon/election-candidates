@@ -2,10 +2,6 @@
   display: block;
 }
 
-.Candidate-Avatar {
-  max-width: 100px;
-}
-
 .Candidate-Card-Info {
   background-color: #282c34;
   color: white;
