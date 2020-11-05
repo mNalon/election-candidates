@@ -1,0 +1,20 @@
+.Candidate-Card {
+  display: block;
+}
+
+.Candidate-Card:hover {
+  background-color: #989696;
+  cursor: pointer;
+}
+
+.Candidate-Avatar {
+  max-width: 100px;
+}
+
+.Candidate-Card-Info {
+  background-color: #282c34;
+  color: white;
+  padding: 5px;
+  border-style: double;
+  border-radius: 10px;
+}
