@@ -2,11 +2,6 @@
   display: block;
 }
 
-.Candidate-Card:hover {
-  background-color: #989696;
-  cursor: pointer;
-}
-
 .Candidate-Avatar {
   max-width: 100px;
 }
@@ -17,4 +12,11 @@
   padding: 5px;
   border-style: double;
   border-radius: 10px;
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .Candidate-Card:hover {
+    background-color: #989696;
+    cursor: pointer;
+  }
 }
