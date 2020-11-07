@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# election-candidates
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse projeto gera uma visualização estática, atráves de uma páagina web, das informações dos candidatos a prefeito de uma determinada cidade. 
 
-## Available Scripts
+## Como funciona
 
-In the project directory, you can run:
+Para que a página possa ser gerada é necessário criar um arquivo `setup.js` dentro de algum diretório, também criado dentro do diretório `public` do projeto. Usar como modelo de dados necessários o modelo fornecido [aqui](public/sample/setup.js).
 
-### `yarn start`
+Os dados para preencher esse arquivo podem ser encontrados no site do [TSE](https://www.tse.jus.br/eleicoes/estatisticas/repositorio-de-dados-eleitorais-1/repositorio-de-dados-eleitorais).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+OBS: o valor do campo `img` de cada `candidate` deve ser o caminho para algum arquivo de imagem do candidato, considerando o caminho a partir do diretório criado para conter o arquivo `setup.js`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Após criar o arquivo `setup.js` basta fazer as configurações necessárias:
 
-### `yarn test`
+- Utilize a versão correta do `NodeJS`. Pode-se utilizar o `nvm` para isso:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+nvm install
+```
 
-### `yarn build`
+- Instale todas as dependências:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Configure a variável de ambiente `REACT_APP_SETUP_PATH` para apontar para o caminho onde o arquivo setup.js se encontra a partir do diretório `public`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Por exemplo, para usar o setup de modelo:
 
-### `yarn eject`
+```
+export REACT_APP_SETUP_PATH=sample
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ou os dados dos candidatos da eleicão da cidade de Cataguases em 2020, também já fornecidos nesse projeto:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+REACT_APP_SETUP_PATH=cataguases/2020
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Construa e sirva a página localmente:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm start
+```
 
-## Learn More
+- Quando todos os dados estiverem corretamente configurados, gere uma versão otimizada da página para ser hospedada na internet. É necessário hospedar todos os arquivo gerados no diretório `build`, após executar o seguinte comando:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Note: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
