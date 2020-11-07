@@ -2,6 +2,10 @@
 
 Esse projeto gera uma visualização estática, atráves de uma páagina web, das informações dos candidatos a prefeito de uma determinada cidade. 
 
+<div style="text-align:center">
+  <img width="200" src="doc/screenshot1.png"><img style="margin-left:20px" width="200" src="doc/screenshot2.png">
+</div>
+
 ## Como funciona
 
 Para que a página possa ser gerada é necessário criar um arquivo `setup.js` dentro de algum diretório, também criado dentro do diretório `public` do projeto. Usar como modelo de dados necessários o modelo fornecido [aqui](public/sample/setup.js).
@@ -50,4 +54,4 @@ npm start
 npm run build
 ```
 
-**Note: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*Note*: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
