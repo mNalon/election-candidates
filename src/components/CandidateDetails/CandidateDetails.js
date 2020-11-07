@@ -1,11 +1,10 @@
 import Media from 'react-bootstrap/Media'
-import { Fragment } from 'react'
 
 import Button from 'react-bootstrap/Button'
 import Table from 'react-bootstrap/Table'
 import Badge from 'react-bootstrap/Badge'
 
-import { BsChevronLeft } from 'react-icons/bs'
+import { BsChevronLeft, BsFileEarmarkText } from 'react-icons/bs'
 
 import './CandidateDetails.css'
 
@@ -62,10 +61,10 @@ const CandidateInfo = ({ candidate }) => {
 }
 
 const CandidateDetails = ({ candidate, handleBack }) => {
-  const { name, img, description } = candidate
+  const { name, img, description, proposalLinks } = candidate
 
   return (
-    <Fragment>
+    <div className='body-container'>
       <Button className='vertical-gap-5' variant="secondary" onClick={handleBack}>
         <BsChevronLeft />
       </Button> 
@@ -77,18 +76,23 @@ const CandidateDetails = ({ candidate, handleBack }) => {
             alt={`Foto ${name}`}
           />
           <Media.Body>
-            <h5 className='font-weight-bold'>{ name }</h5>
+            <h3 className='font-weight-bold'>{ name }</h3>
             <p>
               { description }
+            </p>
+            <h5 className='font-weight-bold text-warning'>PROPOSTAS</h5>
+            <p> 
+              {proposalLinks.map((proposalLink) => (
+                <a href={ proposalLink } target='_blank' rel='noreferrer'>
+                  <BsFileEarmarkText size={ 40 } />
+                </a>
+              ))}
             </p>
           </Media.Body>
         </Media>
       </div>
       <CandidateInfo candidate={candidate} />
-      <div>
-        <h5 className='font-weight-bold'>PROPOSTAS</h5>
-      </div>
-    </Fragment>
+    </div>
   )
 }
 

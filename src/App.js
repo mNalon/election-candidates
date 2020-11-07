@@ -6,11 +6,12 @@ import { Helmet } from "react-helmet";
 import { Fragment, useState } from "react";
 
 import { Header } from './components/Header'
+import { Footer } from './components/Footer'
 import { CandidateList } from './components/CandidateList'
 import { CandidateDetails } from './components/CandidateDetails'
 import { generateAssetURI } from './utils';
 
-const { title, candidates } = window.setup
+const { title, relatedTSEUrl: sourceUrl, candidates } = window.setup
 
 const builtCandidates = candidates.map((candidate) => ({
   ...candidate,
@@ -20,18 +21,19 @@ const builtCandidates = candidates.map((candidate) => ({
 function App() {
   const [selectedCandidate, selectCandidate] = useState(null)
 
+  const backHome = () => selectCandidate(null)
+
   return (
     <Fragment>
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <Header title={title} />
-      <div className='App-Body'>
-        {selectedCandidate
-          ? <CandidateDetails handleBack={() => selectCandidate(null)} candidate={selectedCandidate} />
-          : <CandidateList candidates={builtCandidates} handleCandidateSelection={selectCandidate} />
-        }
-      </div>
+      <Header onClick={backHome} title={title} />
+      {selectedCandidate
+        ? <CandidateDetails handleBack={backHome} candidate={selectedCandidate} />
+        : <CandidateList candidates={builtCandidates} handleCandidateSelection={selectCandidate} />
+      }
+      <Footer sourceUrl={sourceUrl} />
     </Fragment>
   );
 }

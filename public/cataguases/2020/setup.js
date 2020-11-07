@@ -1,5 +1,6 @@
 window.setup = {
   title: 'Candidatos a Prefeito em Cataguases/MG - 2020',
+  relatedTSEUrl: 'https://divulgacandcontas.tse.jus.br/divulga/#/municipios/2020/2030402020/43052/candidatos',
   candidates: [
     {
       name: 'Antonio Lage',
@@ -13,7 +14,8 @@ window.setup = {
       gender: 'Masculino',
       educationLevel: 'Ensino Fundamental Completo',
       maritalStatus: 'Divorciado',
-      birthMunicipality: 'Santana de Cataguases - MG'
+      birthMunicipality: 'Santana de Cataguases - MG',
+      proposalLinks: ['https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2020/MG/43052/426/candidatos/311940/5_1600272678748.pdf']
     },
     {
       name: 'Dra Elizangela Barros',
@@ -27,7 +29,8 @@ window.setup = {
       gender: 'Feminino',
       educationLevel: 'Superior Completo',
       maritalStatus: 'Divorciada',
-      birthMunicipality: 'Cataguases - MG'
+      birthMunicipality: 'Cataguases - MG',
+      proposalLinks: ['https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2020/MG/43052/426/candidatos/130000827417/pje-047cab21-Proposta%20de%20governo.pdf']
     },
     {
       name: 'Hercyl Neto',
@@ -41,7 +44,8 @@ window.setup = {
       gender: 'Masculino',
       educationLevel: '	Superior Completo',
       maritalStatus: 'Solteiro',
-      birthMunicipality: 'Cataguases - MG'
+      birthMunicipality: 'Cataguases - MG',
+      proposalLinks: ['https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2020/MG/43052/2030402020/130001118635/pje-36a542f8-Proposta%20de%20governo.pdf']
     },
     {
       name: 'José Henriques',
@@ -55,7 +59,8 @@ window.setup = {
       gender: 'Masculino',
       educationLevel: 'Superior Completo',
       maritalStatus: 'Casado',
-      birthMunicipality: 'Cataguases - MG'
+      birthMunicipality: 'Cataguases - MG',
+      proposalLinks: ['https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2020/MG/43052/426/candidatos/405074/5_1600443297599.pdf']
     },
     {
       name: 'Maguinho',
@@ -69,7 +74,8 @@ window.setup = {
       gender: 'Masculino',
       educationLevel: 'Superior Completo',
       maritalStatus: 'Casado',
-      birthMunicipality: 'Cataguases - MG'
+      birthMunicipality: 'Cataguases - MG',
+      proposalLinks: ['https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2020/MG/43052/426/candidatos/158636/5_1599585826008.pdf']
     },
     {
       name: 'Paulojacinto',
@@ -83,7 +89,8 @@ window.setup = {
       gender: 'Masculino',
       educationLevel: 'Superior Completo',
       maritalStatus: 'Casado',
-      birthMunicipality: 'Cataguases - MG'
+      birthMunicipality: 'Cataguases - MG',
+      proposalLinks: ['https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2020/MG/43052/426/candidatos/130001008154/pje-74c89363-Proposta%20de%20governo.pdf']
     },
     {
       name: 'Vanderlei Pequeno',
@@ -97,7 +104,8 @@ window.setup = {
       gender: 'Masculino',
       educationLevel: 'Ensino Médio Incompleto',
       maritalStatus: 'Casado',
-      birthMunicipality: 'Viçosa - MG'
+      birthMunicipality: 'Viçosa - MG',
+      proposalLinks: ['https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2020/MG/43052/426/candidatos/313563/5_1600972849081.pdf']
     },
     {
       name: 'Willian',
@@ -111,7 +119,13 @@ window.setup = {
       gender: 'Masculino',
       educationLevel: 'Superior Completo',
       maritalStatus: 'Casado',
-      birthMunicipality: 'Cataguases - MG'
+      birthMunicipality: 'Cataguases - MG',
+      proposalLinks: [
+        'https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2020/MG/43052/426/candidatos/268722/5_1600051403552.pdf',
+        'https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2020/MG/43052/426/candidatos/268722/5_1600051406963.pdf',
+        'https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2020/MG/43052/426/candidatos/268722/5_1600051408095.pdf',
+        'https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2020/MG/43052/426/candidatos/268722/5_1600051405040.pdf'
+      ]
     }
   ]
 }

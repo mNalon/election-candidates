@@ -19,3 +19,12 @@ code {
 .img-avatar {
   max-width: 100px;
 }
+
+.body-container {
+  position: fixed;
+  top: 90px;
+  overflow: auto;
+  height: calc(100% - 135px);
+  padding: 10px;
+  width: 100%;
+}

@@ -1,5 +1,6 @@
 window.setup = {
   title: 'Eleições Sample',
+  relatedTSEUrl: 'https://divulgacandcontas.tse.jus.br/divulga/#/municipios',
   candidates: [
     {
       name: 'Fulano de tal 1',
@@ -13,7 +14,8 @@ window.setup = {
       gender: 'Masculino',
       educationLevel: 'Superior completo',
       maritalStatus: 'Solteiro',
-      birthMunicipality: 'City 1 - FK'
+      birthMunicipality: 'City 1 - FK',
+      proposalLinks: ['http://www.africau.edu/images/default/sample.pdf']
     },
     {
       name: 'Fulano de tal 2',
@@ -27,7 +29,8 @@ window.setup = {
       gender: 'Feminino',
       educationLevel: 'Ensino Médio Incompleto',
       maritalStatus: 'Casada',
-      birthMunicipality: 'City 2 - FK'
+      birthMunicipality: 'City 2 - FK',
+      proposalLinks: ['http://www.africau.edu/images/default/sample.pdf']
     },
     {
       name: 'Fulano de tal 3',
@@ -41,7 +44,8 @@ window.setup = {
       gender: 'Masculino',
       educationLevel: 'Ensino Médio Completo',
       maritalStatus: 'Casado',
-      birthMunicipality: 'City 3 - FK'
+      birthMunicipality: 'City 3 - FK',
+      proposalLinks: ['http://www.africau.edu/images/default/sample.pdf']
     }
   ]
 }

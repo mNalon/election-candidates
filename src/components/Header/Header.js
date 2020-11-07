@@ -1,7 +1,7 @@
 import './Header.css'
 
-const Header = ({ title }) => (
-  <header className='Header'>
+const Header = ({ title, onClick }) => (
+  <header onClick={onClick} className='Header'>
     { title }
   </header>
 )
